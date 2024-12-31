@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Color Change</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section:nth-child(1) {
+            background-color: #ffb932; /* Red */
+        }
+
+        .section:nth-child(2) {
+            background-color: #ffffff; /* Green */
+        }
+
+        .section:nth-child(3) {
+            background-color: #ffb932; /* Blue */
+        }
+
+        .section:nth-child(4) {
+            background-color: #ffffff; /* Yellow */
+        }
+
+        .section:nth-child(5) {
+            background-color: #ffb932; /* Pink */
+        }
+
+        .section:nth-child(6) {
+            background-color: #ffffff; /* White for Section 6 */
+        }
+
+        .section:nth-child(7) {
+            background-color: #ffb932; /* White for Section 6 */
+        }
+
+        .section:nth-child(8) {
+            background-color: #ffff; /* White for Section 6 */
+        }
+
+        .section:nth-child(7) {
+            background-color: #ffb932; /* White for Section 6 */
+        }
+        .content {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            flex-direction: row; /* Ensure image and text are in a row */
+            max-width: 80%;
+        }
+
+        .content img {
+            max-width: 50%; /* Increase the image size */
+            height: auto;
+        }
+
+        .content .text {
+            max-width: 55%; /* Adjust text width */
+            padding: 10px;
+            font-size: 1.5rem; /* Increase the font size */
+            color: #fff;
+            text-align: justify;
+        }
+
+        .section:nth-child(2) .text, .section:nth-child(4) .text {
+            color: #ffb932; /* Match color hex of slide 1 */
+        }
+
+        .section:nth-child(odd) .content {
+            flex-direction: row;
+        }
+
+        .section:nth-child(even) .content {
+            flex-direction: row-reverse;
+        }
+
+        /* Styling for Section 6 with images in a grid layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr); /* 8 images per row */
+            gap: 10px; /* Space between images */
+            padding: 20px;
+            max-width: 95%; /* Optional: Avoid stretching */
+            margin: 0 auto; /* Center the gallery */
+        }
+
+        .gallery img {
+            width: 100%; /* Make each image fill its grid cell */
+            object-fit: cover; /* Ensure the image covers the cell */
+            border-radius: 5px; /* Optional: Adds rounded corners to the images */
+            transition: transform 0.3s ease; /* Add smooth zoom-in effect */
+        }
+
+        /* Zoom-in effect on hover */
+        .gallery img:hover {
+            transform: scale(1.1); /* Zoom the image by 10% */
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="content">
+            <img src="img2.png" alt="Example Image 1">
+            <div class="text">Selamat datang di website yang penuh dengan kenangan. Website ini didesain khusus untuk menyimpan kenangan hubungan ini. Cinta yang dimulai dengan langkah kecil namun penuh keyakinan, membangun pondasi yang kokoh untuk kisah abadi.</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="content">
+            <img src="img1.png" alt="Example Image 2">
+            <div class="text">Setiap momen berharga adalah batu bata yang membangun istana cinta kita. Di sinilah perjalanan kita tertulis, sebagai bukti bahwa cinta sejati mampu melampaui waktu dan rintangan.</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="content">
+            <img src="img3.png" alt="Example Image 3">
+            <div class="text">Kenangan ini adalah peta perjalanan kita. Setiap senyum, tawa, dan air mata adalah penanda yang mempertegas betapa kuatnya ikatan ini. Kita adalah dua hati yang bersatu menjadi satu cerita.</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="content">
+            <img src="img4.png" alt="Example Image 4">
+            <div class="text">Cinta ini adalah rumah. Tempat di mana kita saling menguatkan, saling memahami, dan saling mencintai tanpa syarat. Semua kenangan ini adalah buktinya.</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="content">
+            <img src="img5.png" alt="Example Image 5">
+            <div class="text">Selamanya adalah tujuan kita. Kita telah berjalan sejauh ini, dan di sini kita berjanji untuk terus melangkah bersama, menciptakan lebih banyak kenangan yang layak disimpan di halaman ini.</div>
+        </div>
+    </div>
+    
+    <!-- Section 6: Gallery of 8x4 Images -->
+    <div class="section">
+        <div class="gallery">
+            <img src="g1.jpg" alt="Image 1">
+            <img src="g2.jpg" alt="Image 2">
+            <img src="g3.jpg" alt="Image 3">
+            <img src="g4.jpg" alt="Image 4">
+            <img src="g5.jpg" alt="Image 5">
+            <img src="g6.jpg" alt="Image 6">
+            <img src="g7.jpg" alt="Image 7">
+            <img src="g8.jpg" alt="Image 8">
+    
+            <img src="g9.jpg" alt="Image 9">
+            <img src="g10.jpg" alt="Image 10">
+            <img src="g11.jpg" alt="Image 11">
+            <img src="g12.jpg" alt="Image 12">
+            <img src="g13.jpg" alt="Image 13">
+            <img src="g14.jpg" alt="Image 14">
+            <img src="g15.jpg" alt="Image 15">
+            <img src="g16.jpg" alt="Image 16">
+    
+            <img src="g17.jpg" alt="Image 17">
+            <img src="g18.jpg" alt="Image 18">
+            <img src="g19.jpg" alt="Image 19">
+            <img src="g20.jpg" alt="Image 20">
+            <img src="g21.jpg" alt="Image 21">
+            <img src="g22.jpg" alt="Image 22">
+            <img src="g23.jpg" alt="Image 23">
+            <img src="g24.jpg" alt="Image 24">
+        </div>
+    </div>
+    
+    <!-- Section 7: Gallery of 8x4 Images -->
+    <div class="section">
+        <div class="gallery">
+            <img src="i1.jpg" alt="Image 1">
+            <img src="i2.jpg" alt="Image 2">
+            <img src="i3.jpg" alt="Image 3">
+            <img src="i4.jpg" alt="Image 4">
+            <img src="i5.jpg" alt="Image 5">
+            <img src="i6.jpg" alt="Image 6">
+            <img src="i7.jpg" alt="Image 7">
+            <img src="i8.jpg" alt="Image 8">
+    
+            <img src="i9.jpg" alt="Image 9">
+            <img src="i10.jpg" alt="Image 10">
+            <img src="i11.jpg" alt="Image 11">
+            <img src="i12.jpg" alt="Image 12">
+            <img src="i13.jpg" alt="Image 13">
+            <img src="i14.jpg" alt="Image 14">
+            <img src="i15.jpg" alt="Image 15">
+            <img src="i16.jpg" alt="Image 16">
+    
+            <img src="g25.jpg" alt="Image 17">
+            <img src="g26.jpg" alt="Image 18">
+            <img src="g27.jpg" alt="Image 19">
+            <img src="g28.jpg" alt="Image 20">
+            <img src="g29.jpg" alt="Image 21">
+            <img src="g30.jpg" alt="Image 22">
+            <img src="g31.jpg" alt="Image 23">
+            <img src="g32.jpg" alt="Image 24">
+        </div>
+    </div>
+    <!-- Section 7: Video -->
+<div class="section">
+    <div class="content">
+        <video controls width="80%" autoplay muted loop>
+            <source src="videoku.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<!-- Section 8: Happy New Year -->
+<div class="section">
+    <div class="text-center">
+        <h1 class="title">Happy New Year</h1>
+        <p class="subtitle">Memories in August 2023 - December 2024</p>
+    </div>
+</div>
+
+<style>
+    /* Styling for Section 8 */
+    .text-center {
+        display: flex; /* Menggunakan Flexbox */
+        flex-direction: column; /* Susunan vertikal (judul di atas, subjudul di bawah) */
+        justify-content: center; /* Memusatkan secara vertikal */
+        align-items: center; /* Memusatkan secara horizontal */
+        height: 100vh; /* Mengisi penuh layar */
+        text-align: center; /* Teks rata tengah */
+    }
+
+    .title {
+        font-size: 3rem; /* Ukuran besar untuk judul */
+        font-weight: bold; /* Membuat teks tebal */
+        margin-bottom: 10px; /* Jarak antara judul dan subjudul */
+        color: #ffb932; /* Warna emas */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Ukuran subjudul lebih kecil */
+        margin-top: 0; /* Menghapus margin atas */
+        color: #000; /* Warna hitam */
+    }
+</style>
+
+</body>
+</html>
