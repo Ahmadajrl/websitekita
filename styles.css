@@ -1,0 +1,12 @@
+.content .text {
+    max-width: 55%; /* Adjust text width */
+    padding: 10px;
+    font-size: 1.5rem; /* Increase the font size */
+    color: #fff; /* White text */
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for text */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+.section:nth-child(5) .content .text {
+    color: #ffb932 !important; /* Set text color to orange with !important */
+}
